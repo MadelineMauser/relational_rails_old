@@ -7,4 +7,7 @@ RSpec.describe Aquarium, type: :model do
       expect(aquarium).to be_an(Aquarium)
     end
   end
+  describe 'validations' do
+    it { should validate_presence_of :name }
+  end
 end

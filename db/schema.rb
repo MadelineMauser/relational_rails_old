@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_29_064534) do
+ActiveRecord::Schema.define(version: 2022_08_29_070623) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 2022_08_29_064534) do
     t.string "name"
     t.boolean "has_real_plants"
     t.float "gallons"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "shrimps", force: :cascade do |t|
+    t.string "name"
+    t.float "length_in_cm"
+    t.boolean "is_female"
+    t.string "color"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
