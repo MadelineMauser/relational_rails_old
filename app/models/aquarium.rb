@@ -1,0 +1,3 @@
+class Aquarium < ApplicationRecord
+
+end
