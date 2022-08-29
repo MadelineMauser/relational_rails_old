@@ -1,0 +1,2 @@
+class AquariaController < ApplicationController
+end
