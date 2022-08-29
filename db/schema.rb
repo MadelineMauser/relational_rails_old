@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_29_070623) do
+ActiveRecord::Schema.define(version: 2022_08_29_153948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,9 @@ ActiveRecord::Schema.define(version: 2022_08_29_070623) do
     t.string "color"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.bigint "aquarium_id"
+    t.index ["aquarium_id"], name: "index_shrimps_on_aquarium_id"
   end
 
+  add_foreign_key "shrimps", "aquaria"
 end
