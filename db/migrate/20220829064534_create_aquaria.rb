@@ -1,6 +1,6 @@
-class CreateAquariums < ActiveRecord::Migration[5.2]
+class CreateAquaria < ActiveRecord::Migration[5.2]
   def change
-    create_table :aquariums do |t|
+    create_table :aquaria do |t|
       t.string :name
       t.boolean :has_real_plants
       t.float :gallons
