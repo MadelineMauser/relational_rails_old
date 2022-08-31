@@ -9,7 +9,7 @@ RSpec.describe 'aquaria show page', type: :feature do
     expect(page).to have_content(aquarium_1.name)
     expect(page).to have_content("Contains real plants: #{aquarium_1.has_real_plants}")
     expect(page).to have_content("Gallons: #{aquarium_1.gallons}")
-    expect(page).to have_content("Created at: #{DateTime.now}")
-    expect(page).to have_content("Updated at: #{DateTime.now}")
+    expect(page).to have_content("Created at: #{aquarium_1.created_at}")
+    expect(page).to have_content("Updated at: #{aquarium_1.updated_at}")
   end
 end
