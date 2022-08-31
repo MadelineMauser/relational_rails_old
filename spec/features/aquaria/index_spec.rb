@@ -6,7 +6,7 @@ RSpec.describe 'aquaria index page', type: :feature do
     aquarium_2 = Aquarium.create!(name: "Waterfall Escape", has_real_plants: true, gallons: 10.0, created_at: DateTime.now, updated_at: DateTime.now)
 
     visit '/aquaria'
-    binding.pry
+
     expect(page).to have_content(aquarium_1.name)
     expect(page).to have_content(aquarium_2.name)
   end
