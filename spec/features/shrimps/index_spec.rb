@@ -24,9 +24,9 @@ RSpec.describe 'shrimps index page', type: :feature do
     visit '/shrimps'
 
     expect(page).to have_content("Aquarium ID: #{shrimp_1.aquarium_id}")
-    expect(page).to have_content("Is female: #{shrimp_1.has_real_plants}")
-    expect(page).to have_content("Color : #{shrimp_1.color}")
-    expect(page).to have_content("Length : #{shrimp_1.length_in_cm} cm")
+    expect(page).to have_content("Is female: #{shrimp_1.is_female}")
+    expect(page).to have_content("Color: #{shrimp_1.color}")
+    expect(page).to have_content("Length: #{shrimp_1.length_in_cm} cm")
     expect(page).to have_content("Created at: #{shrimp_1.created_at}")
     expect(page).to have_content("Updated at: #{shrimp_1.updated_at}")
   end
