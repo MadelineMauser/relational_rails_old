@@ -4,6 +4,6 @@ class AquariaController < ApplicationController
   end
 
   def show
-
+    @aquarium = Aquarium.find(params[:id])
   end
 end
