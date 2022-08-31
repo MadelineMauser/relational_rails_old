@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/aquaria', to: 'aquaria#index'
   get '/aquaria/:id', to: 'aquaria#show'
   get '/shrimps', to: 'shrimps#index'
+  get '/shrimps/:id', to: 'shrimps#show'
 end
