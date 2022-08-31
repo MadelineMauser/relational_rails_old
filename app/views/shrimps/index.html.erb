@@ -1,0 +1,11 @@
+<h1>Shrimps Index</h1>
+
+<% @shrimps.each do |shrimp| %>
+  <h3><%= shrimp.name %></h3>
+  <p>Aquarium ID: <%= shrimp.aquarium_id %></p>
+  <p>Is female: <%= shrimp.is_female %></p>
+  <p>Color: <%= shrimp.color %></p>
+  <p>Length: <%= shrimp.length_in_cm %> cm</p>
+  <p>Created at: <%= shrimp.created_at %></p>
+  <p>Updated at: <%= shrimp.updated_at %></p>
+<% end %>
